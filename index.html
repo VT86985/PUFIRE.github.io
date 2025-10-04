@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Native SMP</title>
-  <style>
-    body { background:#111; color:#0f0; font-family:monospace; padding:20px; }
-    pre { background:#000; padding:10px; border-radius:5px; }
-  </style>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <header>
@@ -14,26 +11,7 @@
         <h1>Native SMP</h1>
     </header>
 
-    <h1>Server Status</h1>
-    <div id="status">Checking...</div>
-    <pre id="output"></pre>
+    <h1>Server Log (Under maintainence)</h1>
     <iframe src="https://eelier-bree-quantally.ngrok-free.dev/Output.txt" frameborder="0"></iframe>
-  <!--<script>
-    async function checkServer() {
-      try {
-        let res = await fetch("https://eelier-bree-quantally.ngrok-free.dev/Output.txt"); 
-        if (!res.ok) throw new Error("Offline");
-        let text = await res.text();
-        document.getElementById("status").textContent = "Online ✅";
-        document.getElementById("output").textContent = text;
-      } catch {
-        document.getElementById("status").textContent = "Offline ❌";
-        document.getElementById("output").textContent = "";
-      }
-    }
-
-    checkServer();
-    setInterval(checkServer, 5000);
-  </script> -->
 </body>
 </html>
