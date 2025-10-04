@@ -21,7 +21,7 @@
   <script>
     async function checkServer() {
       try {
-        let res = await fetch("https://YOUR_NGROK_LINK/output.txt"); 
+        let res = await fetch("https://eelier-bree-quantally.ngrok-free.dev/Output.txt"); 
         if (!res.ok) throw new Error("Offline");
         let text = await res.text();
         document.getElementById("status").textContent = "Online ✅";
